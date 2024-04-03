@@ -348,10 +348,6 @@ export const ResumeParserAlgorithmArticle = ({
       <Paragraph>
         And that is everything about the ResumeBuilder parser algorithm :)
       </Paragraph>
-      <Paragraph>
-        Written by <Link href="https://github.com/xitanggg">Xitang</Link> on
-        June 2023
-      </Paragraph>
     </article>
   );
 };
