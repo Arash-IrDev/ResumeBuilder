@@ -58,7 +58,7 @@ export const ResumeParserAlgorithmArticle = ({
         <span key={idx}>
           {item.text}
           {idx !== line.length - 1 && (
-            <span className="select-none font-extrabold text-sky-400">
+            <span className="select-none font-extrabold text-purple-400">
               &nbsp;&nbsp;{"|"}&nbsp;&nbsp;
             </span>
           )}
@@ -107,7 +107,7 @@ export const ResumeParserAlgorithmArticle = ({
         Resume Parser Algorithm Deep Dive
       </Heading>
       <Paragraph smallMarginTop={true}>
-        For the technical curious, this section will dive into the OpenResume
+        For the technical curious, this section will dive into the ResumeBuilder
         parser algorithm and walks through the 4 steps on how it works. (Note
         that the algorithm is designed to parse single column resume in English
         language)
@@ -205,8 +205,8 @@ export const ResumeParserAlgorithmArticle = ({
         At the end of step 2, the resume parser extracts {lines.length} lines
         from the resume PDF added, as shown in the table below. The result is
         much more readable when displayed in lines. (Some lines might have
-        multiple text items, which are separated by a blue vertical divider{" "}
-        <span className="select-none font-extrabold text-sky-400">
+        multiple text items, which are separated by a purple vertical divider{" "}
+        <span className="select-none font-extrabold text-purple-400">
           &nbsp;{"|"}&nbsp;
         </span>
         )
@@ -346,7 +346,7 @@ export const ResumeParserAlgorithmArticle = ({
         the main heuristic doesn't apply to check if the text item is bolded.
       </Paragraph>
       <Paragraph>
-        And that is everything about the OpenResume parser algorithm :)
+        And that is everything about the ResumeBuilder parser algorithm :)
       </Paragraph>
       <Paragraph>
         Written by <Link href="https://github.com/xitanggg">Xitang</Link> on
@@ -434,7 +434,7 @@ const Step3SectionsTable = ({
           <span key={idx}>
             {item.text}
             {idx !== line.length - 1 && (
-              <span className="select-none font-extrabold text-sky-400">
+              <span className="select-none font-extrabold text-purple-400">
                 &nbsp;&nbsp;{"|"}&nbsp;&nbsp;
               </span>
             )}

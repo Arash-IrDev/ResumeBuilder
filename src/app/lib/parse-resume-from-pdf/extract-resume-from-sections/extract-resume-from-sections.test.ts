@@ -19,21 +19,21 @@ describe("extract-profile tests - ", () => {
   });
 
   it("Email", () => {
-    expect(matchEmail(makeTextItem("  hello@open-resume.org  "))![0]).toBe(
-      "hello@open-resume.org"
+    expect(matchEmail(makeTextItem("  jobijump@gmail.com  "))![0]).toBe(
+      "jobijump@gmail.com"
     );
   });
 
   it("Phone", () => {
-    expect(matchPhone(makeTextItem("  (123)456-7890  "))![0]).toBe(
-      "(123)456-7890"
+    expect(matchPhone(makeTextItem("  +90(546)209-0872  "))![0]).toBe(
+      "+90(546)209-0872"
     );
   });
 
   it("Url", () => {
-    expect(matchUrl(makeTextItem("  linkedin.com/in/open-resume  "))![0]).toBe(
-      "linkedin.com/in/open-resume"
+    expect(matchUrl(makeTextItem("  linkedin.com/in/arash-banijamali  "))![0]).toBe(
+      "linkedin.com/in/arash-banijamali"
     );
-    expect(matchUrl(makeTextItem("hello@open-resume.org"))).toBeFalsy();
+    expect(matchUrl(makeTextItem("jobijump@gmail.com"))).toBeFalsy();
   });
 });

@@ -25,10 +25,10 @@ const RESUME_EXAMPLES = [
     ),
   },
   {
-    fileUrl: "resume-example/openresume-resume.pdf",
+    fileUrl: "resume-example/resumebuilder-resume.pdf",
     description: (
       <span>
-        Created with OpenResume resume builder -{" "}
+        Created with ResumeBuilder resume builder -{" "}
         <Link href="/resume-builder">Link</Link>
       </span>
     ),
@@ -69,7 +69,7 @@ export default function ResumeParser() {
               Resume Parser Playground
             </Heading>
             <Paragraph smallMarginTop={true}>
-              This playground showcases the OpenResume resume parser and its
+              This playground showcases the ResumeBuilder resume parser and its
               ability to parse information from a resume PDF. Click around the
               PDF examples below to observe different parsing results.
             </Paragraph>
@@ -80,7 +80,7 @@ export default function ResumeParser() {
                   className={cx(
                     "flex-1 cursor-pointer rounded-md border-2 px-4 py-3 shadow-sm outline-none hover:bg-gray-50 focus:bg-gray-50",
                     example.fileUrl === fileUrl
-                      ? "border-blue-400"
+                      ? "border-purple-400"
                       : "border-gray-300"
                   )}
                   onClick={() => setFileUrl(example.fileUrl)}
